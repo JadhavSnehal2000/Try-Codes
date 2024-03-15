@@ -1,0 +1,16 @@
+<TD  class = "form-td-heading" >Agent Name: <input list = "names">
+                                    <datalist id="names">
+                                    <?php
+                                      while ($row_SOCIETY_NAME = $result_SOCIETY_NAME->fetch_assoc()) {
+                                          $SOCIETY_NAME = $row_SOCIETY_NAME['society'];
+                                          echo '<option value="' . $SOCIETY_NAME . '">' . $SOCIETY_NAME . '</option>';
+                                      }
+                                      ?>                                      
+                                    </datalist>
+
+//<option value="abc"> abc </option>
+//<option value="efg"> efg </option>
+//<option value="hij"> hij </option>
+//<option value="klm"> klm </option>
+                                
+                                  </TD>

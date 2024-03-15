@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="loader1">
+      <style>
+        /* style for Process loader */
+        .loader1 {
+          width: 120px;
+          height: 20px;
+          -webkit-mask: radial-gradient(circle closest-side, #000 94%, #0000) left/20% 100%;
+          background: linear-gradient(#000 0 0) left/0% 100% no-repeat #ddd;
+          animation: l17 2s infinite steps(6);
+        }
+
+        @keyframes l17 {
+          100% {
+            background-size: 120% 100%
+          }
+        }
+
+        /* End Style  process loader */
+      </style>
+    </div>
+    <br><br>
+    <div class="loader2 ">
+      <style>
+        .loader2 {
+          height: 4px;
+          width: 130px;
+          --c: no-repeat linear-gradient(#6100ee 0 0);
+          background: var(--c), var(--c), #d7b8fc;
+          background-size: 60% 100%;
+          animation: l16 3s infinite;
+        }
+
+        @keyframes l16 {
+          0% {
+            background-position: -150% 0, -150% 0
+          }
+
+          66% {
+            background-position: 250% 0, -150% 0
+          }
+
+          100% {
+            background-position: 250% 0, 250% 0
+          }
+        }
+      </style>
+    </div>
+
+    <br><br>
+    <div class="loader3">
+      <style>
+        .loader3 {
+          width: calc(80px / cos(45deg));
+          height: 14px;
+          background: repeating-linear-gradient(-45deg, #000 0 15px, #0000 0 20px) left/200% 100%;
+          animation: l3 2s infinite linear;
+        }
+
+        @keyframes l3 {
+          100% {
+            background-position: right
+          }
+        }
+      </style>
+    </div>
+    <br><br>
+    <div class="loader4">
+      <style>
+        .loader4 {
+          width: 60px;
+          aspect-ratio: 4;
+          background: radial-gradient(circle closest-side, #000 90%, #0000) 0/calc(100%/3) 100% space;
+          clip-path: inset(0 100% 0 0);
+          animation: l1 1s steps(4) infinite;
+        }
+
+        @keyframes l1 {
+          to {
+            clip-path: inset(0 -34% 0 0)
+          }
+        }
+      </style>
+    </div>
+  </div>
+  <br><br>
+  <div class="loader5">
+    <style>
+      .loader5 {
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid lightblue;
+        border-right-color: orange;
+        animation: l2 1s infinite linear;
+      }
+
+      @keyframes l2 {
+        to {
+          transform: rotate(1turn)
+        }
+      }
+    </style>
+  </div>
+  </div>
+  <br><br>
+  <div class="loader6">
+    <style>
+      .loader6 {
+        width: 50px;
+        aspect-ratio: 1;
+        display: grid;
+        -webkit-mask: conic-gradient(from 15deg, #0000, #000);
+        animation: l26 1s infinite steps(12);
+      }
+
+      .loader6,
+      .loader6:before,
+      .loader6:after {
+        background:
+          radial-gradient(closest-side at 50% 12.5%,
+            #f03355 96%, #0000) 50% 0/20% 80% repeat-y,
+          radial-gradient(closest-side at 12.5% 50%,
+            #f03355 96%, #0000) 0 50%/80% 20% repeat-x;
+      }
+
+      .loader6:before,
+      .loader6:after {
+        content: "";
+        grid-area: 1/1;
+        transform: rotate(30deg);
+      }
+
+      .loader6:after {
+        transform: rotate(60deg);
+      }
+
+      @keyframes l26 {
+        100% {
+          transform: rotate(1turn)
+        }
+      }
+    </style>
+  </div>
+  </div>
+  <br><br>
+  <div class="loader7">
+    <style>
+      .loader7 {
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #514b82;
+        -webkit-mask: radial-gradient(circle closest-side at 50% 40%, #0000 94%, #000);
+        transform-origin: 50% 40%;
+        animation: l25 1s infinite linear;
+      }
+
+      @keyframes l25 {
+        100% {
+          transform: rotate(1turn)
+        }
+      }
+    </style>
+  </div>
+  </div>
+
+
+
+  </div>
+</body>
+
+</html>
