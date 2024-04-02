@@ -1,0 +1,12 @@
+//include html file in all folders///
+ <div class="navbarcontent"></div>
+    <script>
+        // Fetch and insert navbar content
+        fetch('navbar/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('.navbarcontent').innerHTML = data;
+            });
+    </script>
+
+//End Include File code //
